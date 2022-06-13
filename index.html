@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body class="bg-zinc-900 text-white">
+    <div
+      class="max-w-md mx-auto mt-10 bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
+    >
+      <div class="md:flex">
+        <div class="md:shrink-0">
+          <img
+            class="h-48 w-full object-cover md:h-full md:w-48"
+            src="/img/descarga.png"
+            alt="Man looking at item at a store"
+          />
+        </div>
+        <div class="p-8">
+          <div
+            class="uppercase tracking-wide text-sm text-indigo-500 font-semibold"
+          >
+            Tailwind css
+          </div>
+          <a
+            href="https://tailwindcss.com/"
+            class="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
+            >Aplicacion Hecha con Framework Tailwind</a
+          >
+          <p class="mt-2 text-slate-500">
+            Hola esta es una aplicacion de escritorio disuelta con tailwindcss,
+            Alojada en la plataforma de <b>Github</b> / github-page
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center items-center h-screen gap-x-2">
+      <form id="taskForm" class="bg-zinc-700 p-10 rounded-md max-w-md">
+        <label for="title" class="block w-full">Title</label>
+        <input
+          type="text"
+          name="title"
+          class="bg-gray-800 px-1 py-2 w-full rounded-md mb-2"
+          placeholder="Write a title"
+        />
+
+        <label for="description" class="block">Description:</label>
+        <textarea
+          name="description"
+          rows="3"
+          placeholder=" Write a description"
+          class="bg-gray-800 px-1 py-2 block w-full rounded-md mb-2"
+        ></textarea>
+
+        <button class="bg-blue-600 px-3 py-1 rounded-md hover:bg-blue-500">
+          Save
+        </button>
+      </form>
+
+      <div
+        id="tasksList"
+        class="bg-zinc-700 max-w-md w-full h-3/5 p-10 overflow-y-scroll"
+      ></div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

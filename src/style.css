@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background-image: url('https://besthqwallpapers.com/Uploads/25-11-2017/30477/thumb2-linear-icons-4k-art-dark-background-references.jpg');
+  backface-visibility: hidden;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
